@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Barbearia Beleza Pura</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> <!--Font txt-->
+</head>
+<body>
+    <header>
+        <div id="box">
+            <h1><img src="img/logo.jpg" alt="logo da Barbearia Beleza Pura"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="product.html">Produtos</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                </ul>
+            </nav>    
+        </div>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <label for="name">Name: </label>
+                <input type="text" id="name" class="input-pattern" required>
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" class="input-pattern" required>
+
+                <label for="tel">Numero de telefone: </label>
+                <input type="number" id="tel" class="input-pattern" required>
+
+                <label for="message">Messagens: </label>
+                <textarea id="message" cols="90" rows="10" class="input-pattern"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Qual é o contato da sua preferência?</legend>
+                <label for="email-radio"><input type="radio" id="email-radio" value="email" name="radio-contact" checked>Email</label>
+
+                <label for="telephone-radio"><input type="radio" id="telephone-radio" value="telephone" name="radio-contact">Telephone</label>
+
+                <label for="whatsapp-radio"><input type="radio" id="whatsapp-radio" value="whatsapp" name="radio-contact">Whatsapp</label>
+                
+            </fieldset>
+
+            <label class="checkbox"> <input type="checkbox" checked> Gostaria de receber email?</label>
+            
+            <fieldset>
+                <legend>Qual horário da sua preferência? </legend>
+                <option>Manhã</option>
+                <option>Tarde</option>
+                <option>Noite</option>
+            </fieldset>
+
+            <input type="submit" value="salvar" class="save">
+        </form>
+        
+        <table>
+            <thead>
+                <th>Dia</th>
+                <th>Horas</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda-feira</td>
+                    <td>08 ~ 17hs</td>
+                </tr>
+                <tr>
+                    <td>Terça-feira</td>
+                    <td>08 ~ 17hs</td>
+                </tr>
+                <tr>
+                    <td>Quarta-feira</td>
+                    <td>08 ~ 17hs</td>
+                </tr>
+                <tr>
+                    <td>Quinta-feira</td>
+                    <td>08 ~ 17hs</td>
+                </tr>
+                <tr>
+                    <td>Sexta-feira</td>
+                    <td>08 ~ 17hs</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <img src="img/logo.png" alt="logo da Barbearia Beleza Pura">
+        <p class="copyright">&copy; Copyright: Projeto do Grupo de PI. 2024</p> <!--&copy icon of (unicode)-->
+    </footer>
+</body>
+</html>
